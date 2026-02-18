@@ -8,13 +8,19 @@
 </head>
 <body>
 
+    <a class="sr-only" href="#main-content">Skip to main content</a>
+    <a class="sr-only" href="#plan-your-trip">Skip to plan your trip</a>
+    <a class="sr-only" href="#testimonials">Skip to testimonials</a>
+    <a class="sr-only" href="#about-your-destination">Skip to about your destination</a>
+    <a class="sr-only" href="contact-us">Skip to contact us</a>
+
     <header>
-        Destination Majorca
-        Let Wonderlust Travel help you plan the trip of your dreams!
-        Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.
+        <h1>Destination Majorca</h1>
+       <p>Let Wonderlust Travel help you plan the trip of your dreams!</p>
+        <p>Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.</p>
     </header>
     <nav>
-        Main Navigation
+        <h2>Main Navigation</h2>
         <input type="checkbox" id="dropdown">
         <label for="dropdown"><span></span></label>
         <ul>
@@ -27,14 +33,15 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="main-content">
         <article>
             Majorca
             <section id="intro">
 
-                Introduction
-                Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.
+                <h3>Introduction</h3>
+                <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
                 <div>
+
                 <!--Responsive Image for Art Direction
                     images/majorca-beach-square-s.jpg
                     images/majorca-beach-vertical-m.jpg
@@ -42,11 +49,18 @@
 
                     404px, 920px, 1280px
                     -->
+
+                    <picture>
+                        <source media="(max-width: 404px)" srcset="images/majorca-beach-square-s.jpg">
+                        <source media="(max-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg">
+                        <img src="images/majorca-beach-horizontal-l.jpg" alt="Waves on a beach in Majorca">
+                    </picture>
+
                     <small>Photo by <a href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie Firth</a> on <a href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
                 </div>
             </section>
             <section id="plan-your-trip">
-                Plan Your Trip
+                <h3>Plan Your Trip</h3>
 
                 <section class="plan">
                     How to Get There
@@ -86,7 +100,7 @@
                 </section>
             </section>
             <section id="testimonials">
-                Testimonials
+                <h3>Testimonials</h3>
 
                 <section>
                     <!--Responsive Image for resolution switching
@@ -95,13 +109,17 @@
                         images/miranda-blake-M.png 920w
                         images/miranda-blake-L.png 1280w
                     -->
+                        <img src="images/miranda-blake-L.png"
+                        srcset="images/miranda-blake-S.png 404w, images/miranda-blake-M.png 920w, images/miranda-blake-L.png 1280w"
+                        sizes="(max-width: 404px) 404px, (max-width: 920px) 920px, 1280px" alt="Picture of Miranda Blake">
+                       
                         <div>
                         Miranda Blake
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>London, England</dd>
                         </dl>
-                        "I traveled here for business, but my stay was extended. Now it is my home."
+                       <p>"I traveled here for business, but my stay was extended. Now it is my home."<p>
                     </div>
                 </section>
                 <section>
@@ -111,13 +129,17 @@
                         images/max-winter-M.png 920w
                         images/max-winter-L.png 1280w
                     -->
+                         <img src="images/max-winter-L.png"
+                        srcset="images/max-winter-S.png 404w, images/max-winter-M.png 920w, images/max-winter-L.png 1280w"
+                        sizes="(max-width: 404px) 404px, (max-width: 920px) 920px, 1280px" alt="Picture of Max Winter">
+                        
                         <div>
                         Max Winter
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Berlin, Germany</dd>
                         </dl>
-                        "Great escape from my reality. Beautiful sunsets, wonderful people, great beer."
+                        <p>"Great escape from my reality. Beautiful sunsets, wonderful people, great beer."</p>
                     </div>
                 </section>
                 <section>
@@ -127,13 +149,16 @@
                         images/ines-villegoes-M.png 920w
                         images/ines-villegoes-L.png 1280w 
                     -->
+                        <img src="images/ines-villegoes-L.png"
+                        srcset="images/ines-villegoes-S.png 404w, images/ines-villegoes-M.png 920w, images/ines-villegoes-L.png 1280w"
+                        sizes="(max-width: 404px) 404px, (max-width: 920px) 920px, 1280px" alt="Picture of Ines Villegoes">
                     <div>
                         Inés Villegoes
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Barcelona, Spain</dd>
                         </dl>
-                        "A very safe environment for all travelers."
+                       <p> "A very safe environment for all travelers."</p>
                     </div>
                 </section>
                 <section>
@@ -143,13 +168,15 @@
                         images/carmen-lorenzo-M.png 920w
                         images/carmen-lorenzo-L.png 1280w
                     -->
+                        <img src="images/carmen-lorenzo-L.png" srcset="images/carmen-lorenzo-S.png 404w,images/carmen-lorenzo-M.png 920w,images/carmen-lorenzo-L.png 1280w"
+                         sizes="(max-width:404px) 404px, (max-width: 920px) 920px, 1280px" alt="Picture of Ines Villegoes">
                         <div>
                         Carmen Lorenzo
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Madrid, Spain</dd>
                         </dl>
-                        "Live, laugh, love-- everything you need in Majorca."
+                        <p>"Live, laugh, love-- everything you need in Majorca."</p>
                     </div>
                 </section>
             </section>
